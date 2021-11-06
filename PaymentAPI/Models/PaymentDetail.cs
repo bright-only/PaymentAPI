@@ -10,18 +10,18 @@ namespace PaymentAPI.Models
     public class PaymentDetail
     {
         [Key]
-        ///hdhjhfdjhfksjd
+        //hdhjhfdjhfksjd
         public int PaymentDetailId { get; set; }
-        ///gddusisjusj
+        //gddusisjusj
         public string CardOwnerName { get; set; }
-        ///gddusisjusj
+        //gddusisjusj
         [Column(TypeName = "nvarchar(16)")]
         public string CardNumber { get; set; }
-        ///gddusisjusj
+        //gddusisjusj
         [Column(TypeName = "nvarchar(5)")]
         public string ExpirationDate { get; set; }
 
-        ///gddusisjusj
+        //gddusisjusj
         [Column(TypeName = "nvarchar(3)")]
         public string SecurityCode { get; set; }
     }
