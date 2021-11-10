@@ -22,15 +22,13 @@ namespace PaymentAPI.Controllers
         public PaymentDetailController(PaymentDetailContext context)
         {
             _context = context;
-            //PaymentDetail model = new PaymentDetail();
-            //PaymentDetailValidation validator = new PaymentDetailValidation();
-            //ValidationResult validResult = validator.Validate(model);
         }
 
         // GET: api/PaymentDetail
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PaymentDetail>>> GetPaymentDetails()
         {
+            
             return await _context.PaymentDetails.ToListAsync();
         }
 
